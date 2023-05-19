@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize</title>
+</head>
+<body>
+    
+    <form action="" >
+        <label for="name">Name: </label>
+        <input type="text" placeholder="Enter your name" id="name" >
+        <input type="button" id="submit" value="click" onclick="fun1()">
+    </form>
+ <script>
+      function fun1() {
+        let na  = document.getElementById("name").value;
+        let slice = na.slice(1);
+        let fl = na.charAt(0);
+        fl===fl.toLowerCase()?alert(fl.toUpperCase() + slice):alert(na);  
+      }
+ </script>
+</body>
+</html>

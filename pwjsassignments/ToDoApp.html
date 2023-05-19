@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo_App</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           min-height: 100vh;
+            background-color: cyan;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px;
+            width: 100%;
+            background-color: white;
+            border-radius: 8px;
+            flex-direction: column;
+            padding: 20px;
+            
+        }
+        .title h2{
+            font-size: 38px;
+            margin-bottom: 12px;
+            font-weight: 800;
+        }
+        .input-bar{
+            display: flex;
+            width: 100%;
+            height: 28px;
+            background-color: gainsboro;
+            border-radius: 20px;
+        }
+        .input-bar input{
+            border: none;
+            outline: none;
+            border-radius: 12px;
+            padding: 10px 12px;
+            width: 100%;
+            background: transparent;
+        }
+        .input-bar button{
+            font-size: 15px;
+            padding: 6px 10px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: #ff3939;
+            color: white;
+            font-weight: bold;
+        }
+        ul{
+            width: 100%;
+            padding: 10px;
+        }
+        li{
+           font-size: 16px;
+           padding: 5px 0px;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title"><h2>TO-DO LIST</h2></div>
+    <div class="input-bar">
+        <input type="text" placeholder="Enter the task" id="input">
+        <button id="button">Add</button>
+    </div>
+    <ul id="lists"></ul>
+    </div>
+
+    <script src="ToDoApp.js"></script>
+</body>
+</html>

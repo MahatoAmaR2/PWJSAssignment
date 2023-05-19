@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change_Text_on_Button_Click</title>
+    <style>
+      .pw {
+        display: none;
+      }
+      .pww {
+        display: block;
+      }
+      .he {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="head">The most affordable learning platform</h2>
+    <h2 class="pw">pw skills</h2>
+    <button class="button">Clcik</button>
+
+    <script>
+      let btn = document.querySelector(".button");
+      let p = document.querySelector(".pw");
+      let h = document.querySelector(".head");
+
+      function togg() {
+        p.classList.toggle("pww");
+        h.classList.toggle("he");
+      }
+      btn.addEventListener("click", togg);
+    </script>
+  </body>
+</html>
